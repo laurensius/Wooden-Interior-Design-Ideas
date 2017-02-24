@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wooden Interior Design Ideas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="manifest/css/bootstrap.min.css" rel="stylesheet">
+        
+        <style type="text/css">
+            body{
+                background-color: #f8efc0;
+            }
+        </style>   
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Wooden Design Interior Ideas</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container container-fluid"  style="margin-top: 60px;">
+            <div id="list_dekorasi" class="row">
+            </div>
+        </div>
+        <script>    
+            var list_dekorasi = '';
+            var modal = '';
+            for(var ctr=1;ctr<=16;ctr++){
+                list_dekorasi += '<div class="col-lg-2 col-md-2 col-xs-6" style="margin-top:30px;">';
+                list_dekorasi += '<center>';
+                list_dekorasi += '<a href="#" data-toggle="modal" data-target="#myModal_'+ctr+'">';
+                list_dekorasi += '<img src="manifest/images/deco_'+ctr+'.jpg" class="img-responsive img-thumbnail" alt="">';
+                list_dekorasi += '</a>';
+                list_dekorasi += '</center>';
+                list_dekorasi += '</div>';
+                
+                modal += '<div class="modal fade" id="myModal_'+ctr+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
+                modal += '<div class="modal-dialog">';
+                modal += '<div class="modal-content">';
+                modal += '<div class="modal-header">';
+                modal += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
+                modal += '<h4 class="modal-title" id="myModalLabel">Wooden Design Interior Ideas</h4>';
+                modal += '</div>';
+                modal += '<div class="modal-body">';
+                modal += '<center>';
+                modal += '<img src="manifest/images/deco_'+ctr+'.jpg" class="img-responsive" alt="">';
+                modal += '</center>';
+                modal += '</div>';
+                modal += '</div>';
+                modal += '</div>';
+                modal += '</div>';
+            }
+            document.getElementById('list_dekorasi').innerHTML = list_dekorasi + modal;
+        </script>  
+        
+        <script src="manifest/js/jquery.min.js"></script>
+        <script src="manifest/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

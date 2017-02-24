@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wooden Interior Design Ideas</string>
+    <string name="uri_content">file:///android_asset/public_html/index.html</string>
+    
+    <string name="tvExit">Are You really sure ? </string>
+    <string name="btnExitYa">Yes !</string>
+    <string name="btnExitTidak">Nope !</string>
+
+</resources>
